@@ -10,7 +10,9 @@ radius = 42
 #       пи возьмите равным 3.1415926
 #       точность указывается в функции round()
 # TODO здесь ваш код
-
+from math import pi
+squear = pi * (radius * 2) / 4
+print(squear)
 
 # Далее, пусть есть координаты точки
 point = (23, 34)
@@ -24,13 +26,25 @@ point = (23, 34)
 #       квадратный корень - это возведение в степень 0.5
 #       операции сравнения дают булевы константы True и False
 # TODO здесь ваш код
-
+leght = (point[0]**2 + point[1]**2)**0.5
+if leght > radius:
+    print(False)
+elif leght < radius:
+    print(True)
+else:
+    print('Тютелька в тютельку')
 # Аналогично для другой точки
 point_2 = (30, 30)
 # Если точка point_2 лежит внутри круга (radius = 42), то выведите на консоль True,
 # Или False, если точка лежит вовне круга.
 # TODO здесь ваш код
-
+leght_2 = (point_2[0]**2 + point[1]**2)**0.5
+if leght_2 > radius:
+    print(False)
+elif leght_2 < radius:
+    print(True)
+else:
+    print('Тютелька в тютельку')
 # Пример вывода на консоль:
 #
 # 77777.7777
