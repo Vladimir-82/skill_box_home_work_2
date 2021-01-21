@@ -21,7 +21,11 @@ violator_songs_list = [
 # Лучше заранее вычислить необходимое, а затем в print(xxx, yyy, zzz)
 
 # TODO здесь ваш код
-
+sum = 0
+for i in violator_songs_list:
+    if i[0] == 'Halo' or i[0] == 'Enjoy the Silence' or i[0] == 'Clean':
+        sum += i[1]
+print('три песни звучат', sum, 'мин')
 # Есть словарь песен группы Depeche Mode
 violator_songs_dict = {
     'World in My Eyes': 4.76,
