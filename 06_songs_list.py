@@ -25,7 +25,7 @@ sum = 0
 for i in violator_songs_list:
     if i[0] == 'Halo' or i[0] == 'Enjoy the Silence' or i[0] == 'Clean':
         sum += i[1]
-print('три песни звучат', sum, 'мин')
+print('три песни звучат', round(sum, 2), 'мин')
 # Есть словарь песен группы Depeche Mode
 violator_songs_dict = {
     'World in My Eyes': 4.76,
@@ -43,3 +43,8 @@ violator_songs_dict = {
 #   А другие три песни звучат ХХХ минут
 
 # TODO здесь ваш код
+sum = 0
+for i, j in violator_songs_dict.items():
+    if i == 'Sweetest Perfection' or i == 'Policy of Truth' or i == 'Blue Dress':
+        sum += j
+print('а другие три песни звучат', round(sum, 2), 'мин')
